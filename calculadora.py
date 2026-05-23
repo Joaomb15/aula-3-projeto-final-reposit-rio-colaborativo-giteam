@@ -11,10 +11,11 @@ def divisao():  #Função de divisão entre dois números
     dividendo = float(input("Por favor, digite o dividendo: "))
     divisor = float(input("Por favor, digite o divisor: "))
     if divisor == 0: 
-        print("Não é possível dividir por zero.")
+        raise ValueError("Não é possível dividir por zero.")
     else: 
         quociente = dividendo / divisor
-        print(f"O quociente entre {dividendo} e {divisor} é {quociente}")
-
-divisao()
+        return dividendo, divisor, quociente    
+        
+dividendo, divisor, resultado = divisao()
+print(f"O quociente entre {dividendo} e {divisor} é {resultado}")
 
