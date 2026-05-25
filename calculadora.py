@@ -36,3 +36,4 @@ def subtracao():
     y = float(input("Por favor, digite o segundo valor: "))
     total = x - y
     return print(f"Subtrair {y} de {x} resulta em: {total}")
+ #Organizar a chamada das funções
